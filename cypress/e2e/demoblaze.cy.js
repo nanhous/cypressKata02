@@ -56,7 +56,7 @@ describe("Creation de compte, connexion, deconnexion", () => {
     cy.get("#logout2").should("be.visible");
   });
 
-  it.only("Log out", () => {
+  it("Log out", () => {
     cy.signIn(username, password);
     cy.logIn(username, password);
     //LOG OUT
